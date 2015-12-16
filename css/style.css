@@ -1,0 +1,71 @@
+body {
+	background-color: #F5F5F5;
+}
+
+h1 {
+    padding-left: 30px;
+    background-color: #E6E6E6;
+    position: fixed;
+    top: 0px;
+    width: 600px;
+}
+
+#wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.hidden {
+	display: none;
+}
+
+input[type=text] {
+    margin-bottom: 10px;
+}
+
+#connect {
+    margin-top: 95px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#message-container {
+    position: fixed;
+    bottom: 0;
+    width: 600px;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+#message {
+    width: 330px;
+}
+
+span.from {
+    font-weight: bold;
+}
+
+ul#messages li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+#messages-container {
+    margin: 95px 0;
+    background-color: #fff;
+}
+
+.camera {
+    width: 460px;
+    height: 460px;
+    position: fixed;
+    top: 0;
+}
+
+#my-camera {
+    left: 0;
+}
+
+#peer-camera {
+	right: 0;
+}

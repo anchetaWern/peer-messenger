@@ -1,0 +1,9 @@
+{
+  "name": "peer-messenger",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "picnic": "~4.1.3",
+    "peerjs": "~0.3.14",
+    "handlebars": "~4.0.5"
+  }
+}
