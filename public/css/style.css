@@ -1,0 +1,87 @@
+body {
+  background-color: #F5F5F5;
+}
+
+#wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  padding-left: 30px;
+  background-color: #E6E6E6;
+}
+
+#messenger-wrapper {
+  width: 400px;
+  float: left;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type=text] {
+  margin-bottom: 10px;
+}
+
+.camera {
+  text-align: center;
+}
+
+#connect {
+  background-color: #fff;
+  padding: 20px;
+}
+
+#message-container {
+  padding: 20px;
+  background-color: #ccc;
+}
+
+ul#messages {
+  margin: 0;
+}
+
+#message {
+  width: 330px;
+}
+
+span.from {
+  font-weight: bold;
+}
+
+ul#messages li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+#messages-container {
+  background-color: #fff;
+}
+
+#my-camera {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+#peer-camera {
+  float: left;
+  width: 300px;
+  height: 350px;
+}
+
+@media screen and (max-width: 800px){
+  #wrapper {
+    width: 100%;
+  }
+
+  #wrapper > div {
+    width: 100%;
+  }
+
+  #peer-camera, #my-camera {
+    float: none;
+  }
+}

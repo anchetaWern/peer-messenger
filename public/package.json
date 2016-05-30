@@ -1,0 +1,10 @@
+{
+  "name": "peer-messenger-client",
+  "version": "0.0.1",
+  "dependencies": {
+    "handlebars": "~4.0.5",
+    "jquery": "~2.1.4",
+    "peerjs": "~0.3.14",
+    "picnic": "~4.1.2"
+  }
+}

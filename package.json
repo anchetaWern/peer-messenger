@@ -1,8 +1,7 @@
 {
-  "name": "peer-messenger",
+  "name": "peer-messenger-appserver",
   "version": "0.0.1",
   "dependencies": {
-    "express": "^4.13.3",
-    "peer": "^0.2.8"
+    "express": "^4.13.4"
   }
 }

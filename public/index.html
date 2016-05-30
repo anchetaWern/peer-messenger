@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Peer Messenger</title>
+	<link rel="stylesheet" href="node_modules/picnic/releases/picnic.min.css">
+	<link rel="stylesheet" href="node_modules/picnic/releases/plugins.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+	<script src="node_modules/peerjs/dist/peer.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="peer-camera" class="camera">
+			<video width="300" height="300" autoplay></video>
+			<h5>peer feed</h5>
+		</div>
+		<div id="messenger-wrapper">
+			<div class="container">		
+				<h1>Peer Messenger</h1>
+				<div id="connect">
+					<h4>ID: <span id="id"></span></h4>				
+					<input type="text" name="name" id="name" placeholder="Name">
+					<input type="text" name="peer_id" id="peer_id" placeholder="Peer ID">
+					<div id="connected_peer_container" class="hidden">
+						Connected Peer: 
+						<span id="connected_peer"></span>
+					</div>
+					<button id="login">Login</button>
+				</div>
+
+				<div id="chat" class="hidden">
+					<div id="messages-container">
+						<ul id="messages"></ul>
+					</div>
+					<div id="message-container">
+						<input type="text" name="message" id="message" placeholder="Type message..">
+						<button id="send-message">Send Message</button>
+						<button id="call">Call</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="my-camera" class="camera">
+			<video width="200" height="200" autoplay></video>
+			<h5>my feed</h5>
+		</div>
+	</div>
+	<script id="messages-template" type="text/x-handlebars-template">
+		{{#each messages}}
+		<li>
+			<span class="from">{{from}}:</span> {{text}}
+		</li>
+		{{/each}}
+	</script>
+</body>
+</html>
